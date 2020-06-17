@@ -11,7 +11,7 @@ public class MessageSender {
 	@Autowired
 	private JmsTemplate jmsTemplate;
 	
-	@Value("${springjms.myQueue)}")
+	@Value("${springjms.myQueue}")
 	private String queue;
 
 	public void send(String message) {
